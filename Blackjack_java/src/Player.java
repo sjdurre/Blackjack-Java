@@ -1,5 +1,5 @@
 public class Player {
-    private final String name;
+    private String name;
     private double bankroll;
     private final Hand hand = new Hand();
 
@@ -10,6 +10,10 @@ public class Player {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public double getBankroll() {
